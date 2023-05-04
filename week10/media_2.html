@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0,maximum-scale=1">
+    <title>Document</title>
+    <style>
+        .menu {
+            float: left;
+        }
+
+        .main {
+            float: left;
+            width: 300px;
+        }
+
+        @media screen and (max-width:800px) {
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .menu {
+                order: 2;
+            }
+
+            .main {
+                order: 1;
+            }
+        }
+
+        @media screen and (min-width: 801px) {
+            .menu {
+                float: left;
+                width: 100px;
+            }
+
+            .main {
+                float: left;
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+    </ul>
+    <div class="main">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Eveniet, aliquam odit, animi quia veniam fugiat culpa labore officia quam unde hic sit neque! Consequatur,
+        corrupti animi a deserunt repellendus quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+        nisi recusandae accusantium! Sequi animi aliquid similique quis dolor hic exercitationem consequatur placeat
+        expedita quas sapiente iste doloremque vero, pariatur doloribus?</div>
+</body>
+
+</html>
